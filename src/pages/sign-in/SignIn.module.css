@@ -1,0 +1,48 @@
+.Textsection {
+  width: 100%;
+}
+
+.Textsection .title {
+  width: 60%;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0;
+  line-height: 4rem;
+  margin: auto;
+}
+
+.Textsection .subTitle {
+  width: 60%;
+  font-size: 1rem;
+  color: gray;
+  margin: 1rem auto;
+}
+
+.InputDiv {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.InputDiv label {
+  font-size: 1rem;
+  color: gray;
+  margin: 0.25rem 0;
+}
+
+.InputDiv input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #212121;
+}
+
+.InputDiv input:focus {
+  border: 2px solid #00b0ef;
+}
+
+.InputDiv input:focus + label {
+  color: #00b0ef;
+  font-weight: 500;
+}
