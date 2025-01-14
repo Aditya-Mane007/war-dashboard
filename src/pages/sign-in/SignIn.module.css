@@ -1,9 +1,19 @@
+.SignInTextDiv {
+  /* background: rgb(0, 176, 239);
+  background: linear-gradient(
+    291deg,
+    rgba(0, 176, 239, 1) 0%,
+    rgba(240, 241, 242, 1) 97%
+  ); */
+  background-color: #f0f1f2;
+}
+
 .Textsection {
   width: 100%;
 }
 
 .Textsection .title {
-  width: 60%;
+  width: 70%;
   font-size: 3rem;
   font-weight: 700;
   padding: 0;
@@ -12,14 +22,14 @@
 }
 
 .Textsection .subTitle {
-  width: 60%;
+  width: 70%;
   font-size: 1rem;
   color: gray;
   margin: 1rem auto;
 }
 
 .InputDiv {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -28,6 +38,7 @@
   font-size: 1rem;
   color: gray;
   margin: 0.25rem 0;
+  font-weight: 500;
 }
 
 .InputDiv input {
@@ -35,7 +46,7 @@
   padding: 0.5rem;
   border-radius: 5px;
   outline: none;
-  border: 1px solid #212121;
+  border: 2px solid #212121;
 }
 
 .InputDiv input:focus {
@@ -45,4 +56,25 @@
 .InputDiv input:focus + label {
   color: #00b0ef;
   font-weight: 500;
+}
+.InputDiv .error {
+  color: #ef233c;
+  font-weight: 500;
+  visibility: hidden;
+}
+
+.InputDiv .error[data-state="true"] {
+  visibility: visible;
+  /* margin: 0.5rem 0; */
+}
+
+.button {
+  background-color: var(--PrimaryBlue);
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white !important;
+  padding: 0.5rem;
+  border-radius: 5px !important;
+  font-size: 1rem !important;
 }
