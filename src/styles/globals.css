@@ -109,7 +109,7 @@ a {
 .dashboardGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
 }
@@ -123,7 +123,7 @@ a {
 .div2 {
   grid-area: 1/2/2/3;
   height: auto;
-  background-color: #00b058;
+  background-color: var(--White);
 }
 
 .div3 {
@@ -140,7 +140,7 @@ a {
 
 .div5 {
   grid-area: 2/3/2/4;
-  background-color: #a800d6;
+  background-color: var(--White);
 }
 
 .punchInDiv,
@@ -150,4 +150,33 @@ a {
 
 .table {
   height: 5rem;
+}
+
+.div1 .title {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #8f959b;
+}
+
+.progressTaskDiv .title {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #8f959b;
+}
+
+.birthdayDiv {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 34%,
+    rgba(168, 0, 214, 1) 100%
+  );
+  color: var(--White);
+}
+
+.birthdayDiv .confettiDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
