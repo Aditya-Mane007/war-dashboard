@@ -26,8 +26,9 @@ function Graph() {
     labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5"],
     datasets: [
       {
+        axis: "x",
         label: "Attendance Statistics",
-        data: [100, 78, 80, 89, 10],
+        data: [90, 78, 80, 89, 50],
         backgroundColor: "#00aeec",
         borderWidth: 2,
       },
@@ -57,8 +58,12 @@ function Graph() {
         title: {
           display: false,
         },
+        beginAtZero: true,
+        max: 100,
+        min: 0,
+        stepValue: 10,
+        steps: 10,
       },
-      beginAtZero: true,
     },
   };
   return (
